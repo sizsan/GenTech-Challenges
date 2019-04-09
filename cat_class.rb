@@ -1,10 +1,10 @@
 class Cat
-    attr_accessor :name, :age, :location, :numWalks
+    attr_reader :location, :numWalks
     def initialize(name, age, location)
         @name = name  
         @age = nil
         @location = location
-        @numWalks = 0
+        @walks = 0
     end
 
     def speak
@@ -16,15 +16,11 @@ class Cat
     end
     
     def walk
-        @numWalks += 1
-        return "#{@name} has been on #{@numWalks} Walks" 
+        @walks += 1
+        return self
+    end
+
+    def display_walk
+        return "#{@name} has been on #{@walks} Walks"
     end
 end
-
-cat = Cat.new("Pixie", 3, "Brissy")
-puts cat.speak
-puts cat.location
-cat.walk
-cat.walk
-cat.walk
-puts cat.walk
