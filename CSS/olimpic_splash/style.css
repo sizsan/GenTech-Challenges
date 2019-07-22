@@ -1,0 +1,23 @@
+#banner {
+    flex-wrap: wrap;
+    height: 200px;
+    background: #E61E2B;
+    margin-left: 0; 
+    margin-right: 0;
+  }
+
+  #parallelogram {
+    position: absolute;
+    z-index: -1;
+    width: 2040px;
+    height: 1920px;
+    margin-left: 55%;
+    transform: skew(20deg);
+    background: #202020;
+  }
+
+body {
+    font-size: 40px;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #ffffff
+  }
